@@ -1,0 +1,39 @@
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.dashboard__taskInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard__taskInfo > h2 {
+    font-size: 16px;
+}
+
+.dashboard__taskInfo > .MuiSvgIcon-root {
+    margin-left: 10px;
+}
+
+.dashboard__control {
+    margin-left: 40px;
+}
+
+.dashboard__control > button {
+    text-transform: inherit !important;
+    text-align: center;
+    background-color: #0a8d48 !important;
+    color: white;
+    height: 28px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.dashboard__control > .MuiSvgIcon {
+
+}
