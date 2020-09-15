@@ -11,14 +11,14 @@ function Header() {
     return (
         <div className="header">
             <div className="header__left">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/slack-logo-icon.png" alt="" />
-
+                {/* <img src="https://nextbestsolution.com/wp-content/uploads/2020/03/Transparent.png" alt="" /> */}
+                <h2>Plan your day in your way</h2>
             </div>
 
-            <div className="header__search">
+            {/* <div className="header__search">
                 <SearchIcon  />
-                <input placeholder="Search slack" />
-            </div>
+                <input placeholder="Search a todo item" />
+            </div> */}
 
             <div className="header__right">
                 <Avatar className="header__avatar" alt={user?.displayName} src={user?.photoURL}/>

@@ -3,19 +3,30 @@ import { Button } from '@material-ui/core'
 import AppsIcon from '@material-ui/icons/Apps';
 import EventIcon from '@material-ui/icons/Event';
 import "./Dashboard.css"
+import TaskList from "./TaskList"
+import { useStateValue } from "./StateProvider"
+import { getTotalTasks } from './Reducer'
 
 function Dashboard() {
+
+    const [{ task, user }, dispatch] = useStateValue();
+    
+
     return (
         <div className="dashboard">
             {/* <p className="dashboard__datetime">Today, 16/09/2020</p> */}
             <div className="dashboard__taskInfo">
-                <h2>You have no task today</h2>
+                <h2>You have {getTotalTasks(task)} tasks today</h2>
                 <EventIcon />
                 <AppsIcon />
-                <div className="dashboard__control">
+                {/* <div className="dashboard__control">
                     <Button>New task</Button>
                     <Button>Remove</Button>
-                </div>
+                </div> */}
+            </div>
+
+            <div className="dashboard__tasks">
+                <TaskList />
             </div>
         </div>
     )
