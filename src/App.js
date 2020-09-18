@@ -19,8 +19,12 @@ function App() {
             <Header />
             <div className="app__body">
               <Switch>
+                <Route path="/admin">
+                  <Dashboard userType="admin"/>
+                </Route>
+
                 <Route path="/">
-                  <Dashboard />
+                  <Dashboard userType="user"/>
                 </Route>
               </Switch>
             </div>

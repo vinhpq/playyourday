@@ -12,7 +12,7 @@ function Header() {
         <div className="header">
             <div className="header__left">
                 {/* <img src="https://nextbestsolution.com/wp-content/uploads/2020/03/Transparent.png" alt="" /> */}
-                <h2>Plan your day in your way</h2>
+                <h2>Plan your day, live your way</h2>
             </div>
 
             {/* <div className="header__search">

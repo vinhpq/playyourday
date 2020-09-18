@@ -26,7 +26,7 @@ function Login() {
     return (
         <div className="login">
             <div className="login__container">
-                <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/slack-logo-thumb.png" alt="" />
+                <img src="https://nextbestsolution.com/wp-content/uploads/2020/03/Transparent.png" alt="" />
                 <h1>Sign in</h1>
                 <p>www.nextbestsolution.com</p>
                 <Button onClick={signIn}>Sign in with Google</Button>
